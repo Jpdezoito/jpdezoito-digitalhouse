@@ -32,8 +32,11 @@ curso = {
        resul = curso.estudantes.length
             for (let i = 0; i < resul; i++){                 
                 console.log(curso.truefalse(curso.estudantes[i]));
+                if (resul === true ) {
+                    return Object.keys(curso.estudantes)
+                }
             }         
-        return  ;
+        return  resul;
     } 
 }
 
