@@ -28,14 +28,11 @@ curso = {
             return false
         }
     },
-    alunosaprovados: function() {   
+    alunosaprovados: function(listaAlunos) {   
        resul = curso.estudantes.length
-            for (let i = 0; i < resul; i++){                 
-                console.log(curso.truefalse(curso.estudantes[i]));
-                if (resul === true ) {
-                    return Object.keys(curso.estudantes)
-                }
-            }         
+            for (let i = 0; i < resul; i++){
+                console.log([curso.truefalse(curso.estudantes[i])]);
+            }
         return  resul;
     } 
 }
